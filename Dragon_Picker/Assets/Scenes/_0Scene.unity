@@ -217,6 +217,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &784466150 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 101568, guid: 37715ade1d9ae2c4b8de3312afb8c3f2, type: 3}
+  m_PrefabInstance: {fileID: 945686862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &784466153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784466150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1f5447ed673b4448ef315e7218dad1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragonEggPrefab: {fileID: 3372106996589727055, guid: 716f53aedad4cea41bf6f09634192634, type: 3}
+  speed: 4
+  timeBetweenEggDrops: 2
+  leftRightDistance: 10
+  chanceDirection: 0.01
 --- !u!1001 &945686862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -276,7 +298,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 101568, guid: 37715ade1d9ae2c4b8de3312afb8c3f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 784466153}
   m_SourcePrefab: {fileID: 100100000, guid: 37715ade1d9ae2c4b8de3312afb8c3f2, type: 3}
 --- !u!1 &963194225
 GameObject:
@@ -336,10 +361,10 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 50
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -362,14 +387,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: -0.9848078, z: 0.17364816, w: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20, y: -180, z: 0}
 --- !u!1001 &765816759005383557
 PrefabInstance:
   m_ObjectHideFlags: 0
