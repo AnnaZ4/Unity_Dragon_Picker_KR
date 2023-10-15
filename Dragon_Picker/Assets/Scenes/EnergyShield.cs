@@ -1,10 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class EnergyShield : MonoBehaviour
 {   
-    
+    public TextMeshProUGUI scoreGT;
+    private void Start()
+    {
+        GameObject scoreGO = GameObject.Find("Score");
+        scoreGT = scoreGO.GetComponent<TextMeshProUGUI>();
+        scoreGT.text = "0";
+    }
     void Update()
     {
         Vector3 mousePos2d = Input.mousePosition;
@@ -23,6 +30,9 @@ public class EnergyShield : MonoBehaviour
         {
             Destroy(Collided);
         }
+        int score = int.Parse(scoreGT.text);
+        score += 1;
+        scoreGT.text = score.ToString();
 
     }
 }
