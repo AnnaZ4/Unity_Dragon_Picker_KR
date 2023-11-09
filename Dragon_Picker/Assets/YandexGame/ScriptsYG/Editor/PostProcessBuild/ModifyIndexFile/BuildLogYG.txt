@@ -1,2 +1,2 @@
-Build path: D:/GitHub/Unity_Dragon_Picker_KR/Dragon_Picker/Dragon_Picker_Build/YandexGameBuild
-Build number: 15
+Build path: D:/GitHub/Unity_Dragon_Picker_KR/Dragon_Picker/Dragon_Picker_Build/YandexgameBuild_Vid17
+Build number: 16
